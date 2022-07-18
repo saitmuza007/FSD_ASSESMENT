@@ -11,15 +11,18 @@ import java.util.List;
 import net.muzz.choc.model.chock;
 
 public class chockDAO {
+	//Database connection with jdbc driver
 	private String jdbcURL="jdbc:mysql://localhost:3306/chocolatestore?useSSL=false";
 	private String jdbcUsername="root";
 	private String jdbcPassword="root";
-	
+	//List of sql queries to be performed
 	private static final String INSERT_CHOCOLATE_SQL="INSERT INTO chocolate"+"(prd_name,price,quantity) VALUES"+"(?,?,?);";
 	private static final String SELECT_ALL_CHOCOLATE_BY_ID="select id,prd_name,price,quantity from chocolate where id=?";
 	private static final String SELECT_ALL_CHOCOLATE="select * from chocolate";
 	private static final String DELETE_CHOCOLATE_SQL="delete from chocolate where id= ?;";
 	private static final String UPDATE_CHOCOLATE_SQL="update chocolate set prd_name = ?,price = ?,quantity = ? where id = ?;";
+	
+	//Instantiating Connection wit try catch block
 	
 	protected Connection getConnection()
 	{
