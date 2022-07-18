@@ -4,13 +4,14 @@
 <html>
 <head>
 <title>Chocolate Inventory Application</title>
+<!-- Bootstrap CDN -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 </head>
 <body>
-
+<!-- Navigation Bar -->
 	<header>
 		<nav class="navbar navbar-expand-md navbar-light"
 			style="background-color:black">
@@ -30,17 +31,18 @@
 	<br>
 
 	<div class="row">
-		<!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
+		
 
 		<div class="container">
 			<h3 class="text-center">List of Chocolates</h3>
 			<hr>
 			<div class="container text-left">
-
+			<!-- Button Declared for CTA -->
 				<a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
 					New Chocolate</a>
 			</div>
 			<br>
+			<!-- Table Declaration -->
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -53,7 +55,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<!--   for (Todo todo: todos) {  -->
+					<!--  For loop for invarinces value getting based on data popoulation in the MYSQL Database -->
 					<c:forEach var="chock" items="${listChocolate}">
 
 						<tr>
@@ -68,7 +70,7 @@
 								href="delete?id=<c:out value='${chock.id}' />">Delete</button></a></td>
 						</tr>
 					</c:forEach>
-					<!-- } -->
+					
 				</tbody>
 
 			</table>
