@@ -1,10 +1,12 @@
 package net.muzz.choc.model;
+//Populating the class with fields of requiment with neccessary data types and variables.
 
 public class chock {
 	private int id;
 	private String prd_name;
 	private float price;
 	private int quantity;
+	//Generating getters and setters with constructors
 	
 	public chock(int id, String prd_name, float price, int quantity) {
 		super();
