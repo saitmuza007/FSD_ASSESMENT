@@ -8,10 +8,14 @@
 
 ![image](https://user-images.githubusercontent.com/55350436/179600605-07a0291e-28f8-44db-a4cf-4033afef4689.png)
 
-3) MYSQL Database
+3) MYSQL Database Commands Execution through JDBC deployd on tomcat server
+
+![image](https://user-images.githubusercontent.com/55350436/179601930-15d75aeb-5018-4021-a536-6db031182626.png)
 
 
 4) Table View
 
 ![image](https://user-images.githubusercontent.com/55350436/179600989-0735f813-504d-45a8-bc44-2d3fb10878db.png)
+
+#THANK YOU
 
