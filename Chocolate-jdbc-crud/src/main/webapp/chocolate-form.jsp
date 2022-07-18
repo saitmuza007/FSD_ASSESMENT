@@ -3,14 +3,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-<title>Chocolate</title>
+<title>Chocolate Inventory Management</title>
+<!-- Bootstrap CDN -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 </head>
 <body>
-
+<!-- Navigation Bar-->
 	<header>
 		<nav class="navbar navbar-expand-md navbar-light"
 			style="background-color: black">
@@ -26,6 +27,7 @@
 		</nav>
 	</header>
 	<br>
+	<!-- Form Declared with REST API (update) -->
 	<div class="container col-md-5">
 		<div class="card">
 			<div class="card-body">
